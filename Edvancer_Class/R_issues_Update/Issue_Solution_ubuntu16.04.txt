@@ -1,0 +1,17 @@
+Error :
+
+> library(dplyr)   
+Error in library.dynam(lib, package, package.lib) : 
+  shared object ‘dplyr.so’ not found
+In addition: There were 11 warnings (use warnings() to see them)
+Error: package or namespace load failed for ‘dplyr’
+> glimpse(ld_all)
+Error: could not find function "glimpse"
+
+Solution:
+
+sudo su
+echo "deb http://www.stats.bris.ac.uk/R/bin/linux/ubuntu precise/" >> /etc/apt/sources.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+apt-get update
+apt-get upgrade

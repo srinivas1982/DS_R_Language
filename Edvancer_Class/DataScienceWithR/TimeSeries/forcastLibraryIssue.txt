@@ -1,0 +1,2 @@
+install.packages("https://cran.r-project.org/src/contrib/Archive/RcppArmadillo/RcppArmadillo_0.6.100.0.0.tar.gz", repos=NULL, type="source")
+install.packages('forecast', dependencies = TRUE)
